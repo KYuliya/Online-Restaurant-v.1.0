@@ -1,0 +1,47 @@
+.main-content {
+  background-color: rgb(180, 240, 161);
+  
+  // .main-content__title
+  &__title {
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
+    & > h2 {
+     font-size: 18pt;
+    }
+  }
+  // .main-content__wrapper
+  &__wrapper {
+    margin: 20px 30px;
+    border: 2px solid blue;
+  }
+
+  // .main-content__tabs-nav
+  &__tabs-nav {
+    background-color: rgb(245, 178, 211);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .main-content__nav-btn
+  &__nav-btn {
+    width: calc(80% / 3);
+    padding: 1rem;
+    font-size: 14pt;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    &.active{
+      color: red;
+      border: 4px solid rgb(189, 6, 6);
+    }
+  }
+
+  // .main-content__tabs-items
+  &__tabs-items {
+  }
+
+  // .main-content__services
+  &__products {
+  }
+}

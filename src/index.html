@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+    <title>food delivery store</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <div>delicious</div>
+          <img src="./images/header/logo.png" alt="" />
+          <div>dream</div>
+        </div>
+        <div class="header__burger-menu"><span></span></div>
+        <nav class="header__menu">
+          <a href="#main">Сделать заказ</a>
+          <a href="#inform">О нас</a>
+          <a href="#contacts">Контактная информация</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="shop-slogan">
+      <div class="shop-slogan__content">
+        <div class="shop-slogan__item">D</div>
+        <div class="shop-slogan__item">e</div>
+        <div class="shop-slogan__item">l</div>
+        <div class="shop-slogan__item">i</div>
+        <div class="shop-slogan__item">c</div>
+        <div class="shop-slogan__item">i</div>
+        <div class="shop-slogan__item">o</div>
+        <div class="shop-slogan__item">u</div>
+        <div class="shop-slogan__item">s</div>
+        <div class="shop-slogan__item"></div>
+        <div class="shop-slogan__item">D</div>
+        <div class="shop-slogan__item">r</div>
+        <div class="shop-slogan__item">e</div>
+        <div class="shop-slogan__item">a</div>
+        <div class="shop-slogan__item">m</div>
+      </div>
+
+      <div class="shop-slogan__btn-reverse-wrap">
+        <button class="shop-slogan__btn-reverse" type="button">
+          <i class="fas fa-arrow-circle-down"></i>
+        </button>
+        <p class="shop-slogan__btn-reverse-text"></p>
+      </div>
+
+      <div class="shop-slogan__btn-animation-wrap">
+        <button class="shop-slogan__btn-animation-control" type="button">
+          Остановить <br />
+          анимацию
+        </button>
+      </div>
+      <!-- Animation -->
+      <div class="shop-slogan__animation-pepper-1 animation">
+        <img src="./images/shop-slogan/pepper.png" alt="pepper" />
+      </div>
+      <div class="shop-slogan__animation-pizza-1 animation">
+        <img src="./images/shop-slogan/pizza.png" alt="pizza" />
+      </div>
+      <div class="shop-slogan__animation-pizza-2 animation">
+        <img src="./images/shop-slogan/pizza.png" alt="pizza" />
+      </div>
+      <div class="shop-slogan__animation-piece_pizza-1 animation">
+        <img src="./images/shop-slogan/piece_pizza.png" alt="piece_pizza" />
+      </div>
+    </section>
+
+    <main class="main-content" id="main">
+      <div class="main-content__title"><h2>Наше меню</h2></div>
+      <div class="main-content__wrapper">
+        <div class="main-content__tabs-nav">
+          <button class="main-content__nav-btn" type="button" data-tab="first">
+            Tab 1 Пицца
+          </button>
+          <button class="main-content__nav-btn" type="button" data-tab="second">
+            Tab 2 Бургеры
+          </button>
+          <button class="main-content__nav-btn" type="button" data-tab="third">
+            Tab 3 Роллы
+          </button>
+        </div>
+        <div class="main-content__tabs-items">
+          <div
+            class="main-content__products products"
+            data-tab-item="first"
+            hidden
+          >
+            TAB 1 active
+          </div>
+          <div
+            class="main-content__products products"
+            data-tab-item="second"
+            hidden
+          >
+            TAB 2 active
+          </div>
+          <div
+            class="main-content__products products"
+            data-tab-item="third"
+            hidden
+          >
+            TAB 3 active
+          </div>
+        </div>
+        <div class="main-content__services services">
+          <div class="services__title-wrapper"><h3>Наши предложения</h3></div>
+          <div class="services__items-wrapper">
+            <div class="services__first-row">
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img
+                    src="./images/services/breakfasts_lunch.jpg"
+                    alt="breakfasts_lunch"
+                  />
+                </div>
+
+                <div class="services__item-title">
+                  <p>Завтраки и бизнес-ланч</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/bar_menu.jpg" alt="bar_menu" />
+                </div>
+
+                <div class="services__item-title">
+                  <p>Барное меню</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__second-row">
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/burgers.jpg" alt="burgers" />
+                </div>
+                <div class="services__item-title">
+                  <p>Бургеры</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/desserts.jpg" alt="desserts" />
+                </div>
+                <div class="services__item-title">
+                  <p>Десерты</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/garnish.jpg" alt="garnish" />
+                </div>
+                <div class="services__item-title">
+                  <p>Гарниры</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/noodles.jpg" alt="noodles" />
+                </div>
+                <div class="services__item-title">
+                  <p>Лапша</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/pizza.jpg" alt="pizza" />
+                </div>
+                <div class="services__item-title">
+                  <p>Пицаа</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/salads.jpg" alt="salads" />
+                </div>
+                <div class="services__item-title">
+                  <p>Салаты</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/soups.jpg" alt="soups" />
+                </div>
+                <div class="services__item-title">
+                  <p>Суп</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/sushi.jpg" alt="sushi" />
+                </div>
+                <div class="services__item-title">
+                  <p>Суши</p>
+                </div>
+              </div>
+              <div class="services__item-wrapper">
+                <div class="services__item-img-wrapper">
+                  <img src="./images/services/vegetarian_food.jpg" alt="" />
+                </div>
+                <div class="services__item-title">
+                  <p>Вегетарианское меню</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="cart-wrapper">
+      <div class="cart-menu">
+        <button class="cart-menu__btn" type="button">BTN</button>
+      </div>
+
+      <div class="cart" hidden>
+        <div class="cart__description">
+          <div class="cart__title">Корзина</div>
+          <div class="cart__cart-status">Вы ничего не добавили</div>
+        </div>
+
+        <!-- Для добавление новых элем -->
+        <div class="cart__items-wrapper"></div>
+
+        <div class="cart__total-price-wrapper">
+          Итого-цена: <span class="cart__total-price"></span>
+        </div>
+
+        <div class="cart__total-weight-wrapper">
+          Итого-вес: <span class="cart__total-weight"></span>
+        </div>
+
+        <div class="cart__order-wrapper">
+          <div class="cart__order-title">Оформить заказ</div>
+        </div>
+
+        <div class="cart__btn-control-wrapper">
+          <button class="cart__btn-control">X</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, aperiam.
+      Officia deleniti, quasi soluta deserunt repellat possimus natus provident
+      debitis a voluptatem qui, nam rerum, illum quibusdam illo. Quo, deleniti.
+      Doloremque, doloribus iusto nam rerum, animi voluptatibus maiores amet
+      velit repellendus dicta eveniet natus in reprehenderit accusamus illum sit
+      non quidem similique recusandae? Ad dolore cupiditate neque maiores,
+      distinctio nobis. Pariatur nihil numquam suscipit est perferendis optio
+      dolores aspernatur qui reprehenderit officia enim nulla ipsa, fugiat
+      facilis libero. Dolorum blanditiis deserunt dolor neque molestiae
+      asperiores veritatis, eius fuga delectus inventore! Vero totam, voluptates
+      dolores placeat minus optio, dolorum soluta rerum cupiditate quo libero
+      laboriosam beatae rem consectetur nesciunt nostrum voluptate porro animi
+      inventore sint nam nobis. Quas debitis quo nemo. Repellat ipsa sint atque,
+      sit rerum sequi maxime dolorem eum voluptas? Corporis, corrupti harum.
+      Doloribus possimus commodi sed consequatur vero est velit, rerum facilis
+      id molestias. Veniam exercitationem corrupti harum? Unde tempora ratione
+      omnis similique nam totam doloribus! Fugiat ut asperiores qui doloribus
+      praesentium soluta provident assumenda nulla recusandae tempora, quod
+      dolor officia distinctio quidem? Voluptate similique consequatur quae
+      soluta. Ut labore animi quis officiis minus atque eligendi repudiandae
+      totam est incidunt, cum impedit explicabo assumenda veniam perferendis
+      illo aliquid cupiditate adipisci laboriosam corporis tempore? Nam ipsa
+      consequuntur optio vitae. Praesentium ea a perspiciatis repellat
+      perferendis unde animi culpa, qui corporis sapiente nihil atque,
+      blanditiis natus odio dicta ipsum aperiam commodi tempore labore
+      distinctio, mollitia enim quod accusantium. Iste, temporibus! Inventore
+      alias nisi ratione laboriosam quos rerum, itaque atque dolore in esse iure
+      eos ipsum illo libero illum soluta, cumque voluptatum aliquam
+      exercitationem accusantium. Animi adipisci eligendi provident! Repellat,
+      amet! Necessitatibus illum cum, beatae veritatis possimus officia quae
+      ratione perspiciatis rem ex nobis expedita, reiciendis voluptatem
+      reprehenderit a nesciunt exercitationem ducimus numquam excepturi atque
+      consectetur. Sequi ipsam delectus tenetur quas. Deserunt corrupti dolores
+      cumque repellendus quasi, ut sequi eum alias recusandae numquam maxime,
+      totam saepe distinctio doloremque! Adipisci, odit dolores. Numquam
+      deleniti iure maxime facilis, repellendus harum eligendi doloremque ea.
+      Quaerat possimus hic voluptatibus ex architecto obcaecati esse vero sed,
+      quasi nihil, exercitationem molestiae veritatis nam eius in veniam impedit
+      culpa ullam, illum at sint qui. Nisi tempore harum nobis. Nam illum sit
+      magni placeat qui consequatur veritatis ipsa impedit dolore obcaecati!
+      Laboriosam praesentium illo soluta error explicabo, sequi ut, vero
+      adipisci fuga accusamus repudiandae inventore magni blanditiis iusto sit.
+      Ratione nostrum consectetur saepe dignissimos, eaque quidem. Totam beatae,
+      consequuntur, exercitationem explicabo vitae ex illum quia aut provident
+      aliquid reprehenderit quam accusamus blanditiis dignissimos? Reiciendis
+      quam a corrupti minus in? Incidunt iure omnis quam aspernatur. Iusto velit
+      assumenda illum dolore voluptas, praesentium animi rem molestiae sunt,
+      explicabo eligendi. Soluta ex aliquam similique optio aspernatur, quam
+      fugiat voluptates sint eaque aut?
+    </div>
+
+    <section class="about-us" id="inform"></section>
+    <footer class="footer" id="contacts"></footer>
+
+    <script
+      src="https://kit.fontawesome.com/af35dede60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="./scripts/animation-сontrol.js"></script>
+    <script src="./scripts/tabs-nav.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+  </body>
+</html>

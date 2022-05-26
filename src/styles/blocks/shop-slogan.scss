@@ -1,0 +1,153 @@
+.shop-slogan {
+  // margin: 70px 10px 0px 0px;
+  background-color: rgb(101, 164, 219);
+  //   height: 90vh;
+  width: 100%;
+  font-family: "Cookie", cursive;
+  font-weight: bold;
+  background: repeat url("/src/images/shop-slogan/background.jpg");
+  background-size: 400px;
+  position: relative;
+
+  // .shop-slogan__content
+  &__content {
+    // margin: 0px 100px;
+    margin: 0 auto;
+    border: 2px solid;
+    width: 90%;
+    display: grid;
+    /* grid-area: row-start / column start / row-end / column end*/
+    /*grid-template: rows / columns */
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    // background-color: aliceblue;
+  }
+  &__item {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    color: red;
+    animation-name: size;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes size {
+    from {
+      background-color: rgb(240, 176, 176);
+    }
+    to {
+      // font-size: 20pt;
+      background-color: aqua;
+    }
+  }
+
+  // .shop-slogan__btn-reverse-wrap
+  &__btn-reverse-wrap {
+    position: absolute;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    &:hover {
+      > p::after {
+        content: "change direction";
+      }
+    }
+  }
+
+  // .shop-slogan__btn-reverse
+  &__btn-reverse {
+    color: red;
+    font-size: 40px;
+    transform: rotate(-45deg);
+    background-color: inherit;
+    &.active {
+      color: rgb(76, 0, 255);
+      transform: rotate(45deg);
+    }
+  }
+
+  // .shop-slogan__btn-animation-wrap
+  &__btn-animation-wrap {
+    position: absolute;
+    top: 20%;
+    // transform: translateY(-50%);
+    left: 20px;
+  }
+
+  // .shop-slogan__btn-animation-control
+  &__btn-animation-control {
+    padding: 10px 15px;
+    border: 2px solid rgb(91, 97, 16);
+    border-radius: 100%;
+    opacity: 0.8;
+  }
+
+  // .shop-slogan__animation-pepper-1
+  &__animation-pepper-1 {
+    top: 55px;
+    left: 190px;
+    width: 45px;
+    transform: rotate(10deg);
+    animation: pepper_1 3s infinite alternate;
+
+    > img {
+      // border: 2px solid black;
+    }
+
+    @keyframes pepper_1 {
+      to {
+        width: 55px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // shop-slogan__animation-pizza-1
+  &__animation-pizza-1 {
+    bottom: 45px;
+    left: 100px;
+    width: 80px;
+    animation: pizza 10s infinite alternate;
+  }
+
+  // .shop-slogan__animation-pizza-2
+  &__animation-pizza-2 {
+    right: 50px;
+    bottom: 30px;
+    width: 90px;
+    animation: pizza 10s infinite alternate;
+  }
+
+  //.shop-slogan__animation-piece_pizza-1
+  &__animation-piece_pizza-1 {
+    top: 100px;
+    right: 40px;
+    width: 85px;
+    transform: rotate(-30deg);
+    animation: pizza-2 5s infinite alternate;
+  }
+
+  @keyframes pizza-2 {
+    to{
+      width: 120px;
+      transform: rotate(40deg);
+    }
+  }
+
+  @keyframes pizza {
+    to {
+      width: 90px;
+      transform: rotate(360deg);
+      right: 60px;
+    }
+  }
+}
+.animation {
+  position: absolute;
+  border: 1px solid;
+}

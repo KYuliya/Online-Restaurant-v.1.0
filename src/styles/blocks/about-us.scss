@@ -1,0 +1,125 @@
+.about-us {
+  // .about-us__company-age
+  &__company-age {
+    width: 100%;
+    max-height: 700px;
+    position: relative;
+    > img {
+      max-height: inherit;
+      width: inherit;
+    }
+    > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      //translate(x, y);
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      backdrop-filter: blur(6px);
+      // background: center/cover url("/src/images/about-us/pizza.png");
+      border: 10px solid white;
+      width: 370px;
+      height: 370px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 200pt;
+      font-family: "Cookie", cursive;
+
+      // transparent Устанавливает прозрачный фон.
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 12px #fff;
+
+      animation: about-us-animation 10s linear infinite alternate;
+
+      @keyframes about-us-animation {
+        // from {
+        //   -webkit-text-stroke: 12px rgb(255, 255, 255);
+        //   border-color: rgb(255, 255, 255);
+        // }
+        50% {
+          -webkit-text-stroke-color: rgb(6, 95, 11);
+          border-color: rgb(6, 95, 11);
+        }
+        75% {
+          -webkit-text-stroke-color: rgb(34, 4, 163);
+          border-color: rgb(34, 4, 163);
+        }
+
+        to {
+          -webkit-text-stroke-color: rgb(136, 6, 6);
+          border-color: rgb(136, 6, 6);
+        }
+      }
+    }
+  }
+
+  // .about-us__company-inform-wrapper
+  &__company-inform-wrapper {
+    background-color: rgb(236, 134, 236);
+    border: 2px solid black;
+    display: flex;
+    min-height: 300px;
+  }
+  // .about-us__company-inform --> h3 p
+  &__company-inform {
+    padding: 20px 25px;
+    width: 40%;
+    position: relative;
+    > h3 {
+      font-size: 15pt;
+      text-align: center;
+    }
+    > p {
+      padding: 10px 0px;
+      font-size: 14pt;
+      text-align: justify;
+      line-height: 30px;
+      position: absolute;
+      
+    }
+  }
+
+  // .about-us__slider-wrapper
+  &__slider-wrapper {
+    width: 60%;
+    background-color: rgb(160, 245, 245);
+  }
+
+  // .about-us__slider
+  &__slider {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+
+  // .about-us__slide
+  &__slide {
+    border: 2px solid rgb(28, 0, 128);
+    // width: 50%;
+    // margin: 0 auto;
+  }
+
+  // .about-us__slide-inform --> h3 p
+  &__slide-inform {
+    h3 {
+      text-align: center;
+      letter-spacing: 2px;
+      padding: 10px 0px;
+      font-size: 15pt;
+    }
+    p {
+      height: 60px;
+      padding: 5px 20px;
+      font-size: 14pt;
+      text-align: justify;
+    }
+
+    border: 2px dotted;
+  }
+
+  // .about-us__slide-img-wrapper --> img
+  &__slide-img-wrapper {
+  }
+}
